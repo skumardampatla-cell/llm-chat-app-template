@@ -1,5 +1,19 @@
-# Wrangler config has moved to wrangler.toml
-# This file is deprecated and should not be used
-# Delete this file and use wrangler.toml instead
-
-# See wrangler.toml for the SEO Blog Generator configuration
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "seo-blog-generator",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-02-04",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "ai": {
+    "binding": "AI"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "CACHE",
+      "id": "f3460b3824334eed9df13363970e77e6"
+    }
+  ]
+}
